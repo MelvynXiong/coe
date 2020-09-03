@@ -1,5 +1,5 @@
 {
-  "name": "@xmh/coe",
+  "name": "@ioe/mini-koa",
   "version": "1.0.0",
   "description": "node web app framework",
   "main": "lib/application.js",

@@ -16,8 +16,8 @@ function delegateSet(target, prop, ele) {
     ...descriptor,
     configurable: true,
     enumerable: true,
-    set() {
-      target[ele] = this[prop][ele];
+    set(data) {
+      this[prop][ele] = data;
     },
   });
 }
