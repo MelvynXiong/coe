@@ -16,7 +16,7 @@ module.exports = (middlewares) => {
 
   return async (ctx) => {
     for (let i = len - 1; i >= 0; i--) {
-      next = await createNext(ctx, middlewares[i], next);
+      next = createNext(ctx, middlewares[i], next);
     }
     await next();
   };
