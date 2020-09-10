@@ -16,6 +16,11 @@ app.use(async (ctx, next) => {
 
 app.use(async (ctx, next) => {
   responseData.sex = "male";
+  throw new Error("ooops");
+});
+
+app.on("error", (e) => {
+  console.log(e.stack);
 });
 
 app.listen(3000, () => {
